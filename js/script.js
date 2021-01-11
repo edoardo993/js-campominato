@@ -74,6 +74,7 @@ while(!pcNumberList.includes(userNumber) && userNumberList.length<maxUserNumbers
 // restituisco all'utente la quantità di tentativi utilizzati, cioè la quantità dei numeri da lui inseriti
 results.innerText='Bravo comunque! Sei riuscito a totalizzare: ' + userNumberList.length + ' punti!';
 console.log('I numeri inseriti dall\'utente sono: ' + userNumberList);
+console.log('L\'utente ha perso poiché ha inserito il numero: ' + userNumberList[userNumberList.length-1]);
 
 
 // BONUS
