@@ -22,8 +22,7 @@ function isNumberValid(input){
 }
 // END FUNCTIONS
 
-// definisco adesso le variabili --> lista numeri utente, lista numeri pc
-// e dichiaro la variabile del prompt per l'utente
+// definisco adesso le variabili che mi occoreranno
 var results=document.getElementById('result');
 var pcNumberList = [];
 var userNumberList = [];
@@ -32,7 +31,11 @@ var min=1;
 var max;
 var totalBombs=16;
 var maxUserNumbers;
-var difficulty=prompt('Inserisci la difficoltà: 0 per facile, 1 per media, 2 per difficile:')
+var difficulty=prompt('Inserisci la difficoltà: 0 per facile, 1 per media, 2 per difficile:');
+
+// costruisco uno switch per selezionare quale difficoltà è stata scelta
+// dall'utente e far procedere il programma con i giusti numeri massimi
+// per poter vincere ed il range dei numeri stessi
 switch (difficulty) {
   case '2':
     max=50;

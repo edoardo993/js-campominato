@@ -12,12 +12,6 @@
 
 // FUNCTIONS
 
-// funzione dedicata al calcolo dei numeri randomici
-function randomNumber(min, max) {
-  var result = Math.floor(Math.random() * (max + 1 - min) + min);
-  return result
-}
-
 // funzione dedicata alla validazione del valore inserito dall'utente
 function isNumberValid(input){
   if(input<=0 || input>100) {
@@ -30,7 +24,7 @@ function isNumberValid(input){
 }
 // END FUNCTIONS
 
-// definisco adesso le variabili --> lista numeri utente, lista numeri pc
+// definisco e popolo adesso le variabili
 // e dichiaro la variabile del prompt per l'utente
 var results=document.getElementById('result');
 var pcNumberList = [];
@@ -41,8 +35,9 @@ var max=100;
 var totalBombs=16;
 var maxUserNumbers=84;
 
-// ciclo numeri randomici da 1 a 100 fino ad averne 16 nella lista; se non si ripetono, li aggiungo alla lista
-while(pcNumberList.length<16){
+// ciclo numeri randomici da 1 a 100 fino ad averne 16 nella lista;
+// se non si ripetono, li aggiungo alla lista
+while(pcNumberList.length<totalBombs){
   var pcRandomNumbers = Math.floor(Math.random() * max) + min;
   if(pcNumberList.indexOf(pcRandomNumbers) === -1){
     pcNumberList.push(pcRandomNumbers);
