@@ -75,11 +75,3 @@ while(!pcNumberList.includes(userNumber) && userNumberList.length<maxUserNumbers
 results.innerText='Bravo comunque! Sei riuscito a totalizzare: ' + userNumberList.length + ' punti!';
 console.log('I numeri inseriti dall\'utente sono: ' + userNumberList);
 console.log('L\'utente ha perso poiché ha inserito il numero: ' + userNumberList[userNumberList.length-1]);
-
-
-// BONUS
-
-// all’inizio il software richiede anche una difficoltà all’utente che cambia il range di numeri casuali:
-// con difficoltà 0 => tra 1 e 100
-// con difficoltà 1 =>  tra 1 e 80
-// con difficoltà 2 => tra 1 e 50
