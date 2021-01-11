@@ -32,6 +32,7 @@ function isNumberValid(input){
 
 // definisco adesso le variabili --> lista numeri utente, lista numeri pc
 // e dichiaro la variabile del prompt per l'utente
+var results=document.getElementById('result');
 var pcNumberList = [];
 var userNumberList = [];
 var userNumber;
@@ -71,7 +72,7 @@ while(!pcNumberList.includes(userNumber) && userNumberList.length<maxUserNumbers
 }
 
 // restituisco all'utente la quantità di tentativi utilizzati, cioè la quantità dei numeri da lui inseriti
-alert('Il tuo punteggio è: ' + userNumberList.length);
+results.innerText='Bravo comunque! Sei riuscito a totalizzare: ' + userNumberList.length + ' punti!';
 console.log('I numeri inseriti dall\'utente sono: ' + userNumberList);
 
 
