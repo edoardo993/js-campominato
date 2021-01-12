@@ -33,15 +33,6 @@ var totalBombs=16;
 var maxUserNumbers;
 var difficulty;
 
-function choice(x){
-  if(x<0||x>2){
-    return false
-  }
-  if(isNaN(x)){
-    return false
-  }
-  return true
-}
 // costruisco uno switch per selezionare quale difficoltà è stata scelta
 // dall'utente e far procedere il programma con il giusto numero massimo di tentativi
 // per poter vincere ed il range dei numeri stessi
